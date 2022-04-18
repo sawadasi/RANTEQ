@@ -1,0 +1,12 @@
+h1 タスクの新規登
+.nav.justify-content-end
+=link_to '一覧',tasks_path,class:'nav-link'
+
+=form_with model: @task,local:true do |f|
+.form-group
+=f.label:name
+=ftask_frld :name,class:'from-control',id: 'task_name'
+from-group
+=f.adel:description
+=f.text_area :description, rowa:5,class:'form=control',id:'task_description'
+=f.submit nil,class: 'btn-primary'
